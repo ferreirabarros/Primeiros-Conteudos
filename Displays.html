@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Displays</title>
+<style>
+  p{
+    color: red;
+  }
+  .exp1{
+    /* tranforma em bloco */
+    display:block;
+  }
+  .exp2{
+    /* tranforma em linha */
+    display: inline;
+  }
+  .exp4{
+    /* tranforma em blocos mais se comporta como linha */
+    display: inline-block;
+  }
+  .exp3{
+    /* none: desaparece */
+    display: none; 
+  }
+    /* seletor houver serve para iniciar uma ação ao passar o mouse em cima */
+  .aparecer:hover .exp3{
+    display:block
+  }
+
+</style>
+
+  </head>
+  <body>
+    <p class="exp1">Lorem Ipsum</p>
+    <p class="exp2">Lorem Ipsum</p>
+    <div class="aparecer">aparecer 
+    <p class="exp3">Lorem Ipsum</p></div>
+    <p class="exp4">Lorem Ipsum</p>
+  </body>
+</html>
