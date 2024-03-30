@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Posicionamento</title>
+    <style>
+      .container{
+        background: blueviolet;
+        color: #fff;
+
+        /* Position: static */
+        /* Static é a posicionamento padrão */
+      }
+      /*position: relative */
+      /* é um posicionamento relativo ao elemento pai(<div class="container">) */
+      .p-relative{
+        background: red;
+        position:relative; 
+        top: 10px;
+        right:50px;
+        bottom: 20px;
+        left:20px;
+        width: 150px;
+        }
+        /*position: absolute */
+      /* é um posicionamento relativo a pagina */
+      .p-absolute{
+        background: red;
+        position:absolute; 
+        top: 200px;
+        left:200px
+        }
+        /*position: fixed */
+      /* é um posicionamento relativo a pagina */
+      .p-fixed{
+        background: red;
+        position: fixed; 
+        top: 100px;
+        left:200px;
+
+        /* z-index serve para mover pelas camadas frente e tras */
+        z-index: 999; 
+        }
+      
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      LOREM IPSUM 1
+        <div class="p-relative">
+            LOREM IPSUM 1 (relativo ao pai)
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      LOREM IPSUM 2
+      <div class="p-absolute">
+        LOREM IPSUM 2 (relativo a pagina)
+      </div>      
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      LOREM IPSUM 3
+      <div class="p-fixed">
+        LOREM IPSUM 3 (fixo no scroll)
+      </div>      
+    </div>
+
+<!-- <br> para dar quebra de linha -->
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+  </body>
+</html>
