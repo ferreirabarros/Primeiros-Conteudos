@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+  <meta charset="utf-8"/>
+  <title>Margin, Padding, Border</title>
+  <header>
+    
+    <style>
+      /* 0(top).0(rigth).0(bottom).0(left) */
+      div{
+        background: blue;
+        color: #fff;
+        text-align:center;
+
+
+        
+        /* 10.20.5.2 */
+        margin: 10px 20px 5px 2px;
+        /* 30.15.30.15 */
+        padding: 30px 15px;
+
+        /* Para border é necessario ser especifico  */
+        border-top: 15px dashed red; /*dashed para bordas tracejadas*/
+        border-right: 15px solid red;/*solid para bordas solidas*/
+        border-bottom: 15px dashed red;
+        border-left: 15px solid red;
+
+      }
+    </style>
+  </header>
+  <body>
+    <div>
+      LOREM IPSUM
+    </div>
+  </body>
+</html>
