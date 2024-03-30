@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pr-br">
+<head>
+  <meta charset="utf-8"/>
+  <title>Especificidades</title>
+  <!-- Grau de especificidade = 0.0.0.0 -->
+  <!-- 0.(inlene) 0.(id) 0.(class) 0.(tags) -->
+
+  <style>
+    /* 0.0.0.1 */
+    p{
+      color: red; /* texto1  color em tags*/ 
+    }
+    /* 0.0.1.1 */
+    .cor{
+      color: blue; /* texto2  color em tags e em class*/
+    }
+    /* 0.1.1.1 */
+    #cor, #cor2{
+      color: black; /* texto3/4 color em tags, em class e em id*/
+    }
+
+    /* 1.1.1.1 -> a especificidade inlane é na propria linha */
+  </style>
+
+
+</head>
+<body>
+  <!-- 0.0.0.1 -->
+  <p>Texto1</p> <!-- color em tags -->
+  <!-- 0.0.1.1 -->
+  <p class="cor">Texto2</p> <!-- color em tags e em class -->
+  <!-- 0.1.1.1 -->
+  <p class="cor" id="cor">Texto3</p> <!-- color em tags, em class e em id-->
+  <!-- 1.1.1.1 -->
+  <p class="cor" id="cor" style="color:brown">Texto4</p> <!-- color em tags, em class, em id e em inlane -->
+  <!-- 0.0.0.1 -->
+  <p>Texto5</p> <!-- color em tags -->
+</body>
+
+</html>
