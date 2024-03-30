@@ -5,14 +5,36 @@
     <title>Estruturação</title>
     <!-- css externo -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+      header{
+        width: 200px;
+        margin: 0 auto;
+      }
+        /* seletores tags, class e id */
+      .container{
+        background: green;
+      }
+
+      #texto1{
+        color: blue;
+      }
+      #texto2{
+        color:blueviolet;
+      }
+      #texto3{
+        color: orange;
+      }
+      
+    </style>
+
   </head>
   <body>
     <header>
       <nav>
-        <ul>
-          <li>Home</li>
-          <li>Contato</li>
-          <li>Sobre</li>
+        <ul class="container">
+          <li id="texto1">Home</li>
+          <li id="texto2">Contato</li>
+          <li id="texto3">Sobre</li>
         </ul>
       </nav>
     </header>
